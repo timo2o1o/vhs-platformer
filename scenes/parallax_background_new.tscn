@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://sy1d3is7qc41"]
+
+[ext_resource type="Texture2D" uid="uid://b4nl8g608tnjj" path="res://assets/Background/Background_2.png" id="1_10uow"]
+[ext_resource type="Texture2D" uid="uid://2fk5wosk16lb" path="res://assets/Background/Background_1.png" id="2_7lxjs"]
+
+[node name="parallax_background_new" type="Node2D" unique_id=740954879]
+
+[node name="background1" type="Parallax2D" parent="." unique_id=1454932722]
+scroll_scale = Vector2(0.1, 1)
+repeat_size = Vector2(1189, 0)
+repeat_times = 2
+
+[node name="background_cloud" type="Sprite2D" parent="background1" unique_id=1977979294]
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("1_10uow")
+centered = false
+
+[node name="background2" type="Parallax2D" parent="." unique_id=902688705]
+scroll_scale = Vector2(0.2, 1)
+repeat_size = Vector2(1189, 0)
+repeat_times = 2
+
+[node name="foreground_clouds" type="Sprite2D" parent="background2" unique_id=1683662882]
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("2_7lxjs")
+centered = false

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://o8qpoldqs0nt"]
+
+[ext_resource type="FontFile" uid="uid://dy0hk3yhuo00i" path="res://assets/fonts/Kenney Pixel Square.ttf" id="1_ahhtf"]
+[ext_resource type="Script" uid="uid://d3wkhgxk34n0t" path="res://scenes/hud.gd" id="1_oo0fn"]
+
+[node name="HUD" type="CanvasLayer" unique_id=2142708317]
+script = ExtResource("1_oo0fn")
+
+[node name="Timer-HUD" type="Control" parent="." unique_id=1990197635]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimeLabel" type="Label" parent="Timer-HUD" unique_id=1665753088]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -59.0
+offset_right = 59.0
+offset_bottom = 24.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 20
+text = "Time Left: 0"
+
+[node name="ScoreLabel" type="Label" parent="Timer-HUD" unique_id=1818937135]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -42.0
+offset_top = 40.0
+offset_right = 43.0
+offset_bottom = 70.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ahhtf")
+theme_override_font_sizes/font_size = 20
+text = "Score: 0"
